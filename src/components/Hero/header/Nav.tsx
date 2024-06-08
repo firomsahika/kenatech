@@ -1,6 +1,8 @@
-import React from 'react'
+
+import {  Link } from "react-router-dom";
 import logo from "../../../assets/logo.png"
 import { CiSearch } from "react-icons/ci";
+
 
 export default function Nav() {
   return (
@@ -8,11 +10,11 @@ export default function Nav() {
       <nav className='flex gap-40 items-center justify-center h-14'>
         <img src={logo} alt="logo"  className='w-32'/>
         <ul className='text-gray-200 flex gap-14'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <Link to="/"><li>Home</li></Link>
+            <Link to="/about"><li>About</li></Link>
+            <Link to="/services"><li>Services</li></Link>
+            <Link to="/projects"><li>Projects</li></Link>
+            <Link to="/contacts"><li>Contact</li></Link>
         </ul>
         
         <div className='flex items-center justify-center gap-4'>

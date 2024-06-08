@@ -6,10 +6,10 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 
 export default function Branding() {
   return (
-    <main className='py-20 flex items-center justify-center font-poppins'>
-      <div className='flex items-center justify-center gap-32'>
+    <main className='py-20 flex items-center justify-center font-poppins bg-secondary'>
+      <div className='flex flex-col md:flex-row lg:flex-row items-center justify-center gap-10 lg:gap-32 md:gap-28 px-6'>
          <div>
-            <img src={brand} alt="brand" className='w-[35rem] rounded-t-full' />
+            <img src={brand} alt="brand" className='w-[25rem] lg:w-[35rem] md:[35rem] rounded-t-full' />
          </div>
          <div className='flex items-start justify-start flex-col gap-4'>
             <button className='bg-primary text-secondary font-semibold text-sm px-4 py-3 rounded-md'>Branding</button>

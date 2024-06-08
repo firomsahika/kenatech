@@ -22,12 +22,12 @@ export default function HeroImage() {
 
         <div className='flex flex-col gap-10   items-center justify-center  '>
             <img src={hero} alt="hero-img"
-            className='w-[70%] lg:w-[85%] rounded-3xl'
+            className='w-[95%] lg:w-[85%] rounded-3xl'
             />
-            <div className="lg:absolute md:absolute bottom-2  md:bottom-6 lg:bottom-6 md:right-32 lg:right-32 flex  gap-4  ">
+            <div className="lg:absolute md:absolute   md:bottom-6 lg:bottom-6 md:right-32 lg:right-32 grid grid-cols-1 lg:grid-cols-2  gap-4  px-4 lg:px-0">
               {
                 datas.map(({img,title,description})=>(
-                  <div key={title} className=" bottom-20  w-60 bg-white gap-4 p-4  rounded-md ">
+                  <div key={title} className=" bottom-20  md:w-60 lg:w-60 bg-white gap-4 p-4  rounded-md ">
                     <img src={img} className="bg-teal-100 p-2 w-16"/>
                     <p className="text-md font-semibold " >{title}</p>
                     <p className="text-xs">{description}</p>
@@ -39,7 +39,7 @@ export default function HeroImage() {
 
         <div className="flex items-start justify-start gap-10 py-4 px-28">
         
-            <p className='text-gray-200 py-6'>We're lively, not corporate. We have the energy and<br/> boldness of a startup and the expertise and<br/> pragmatism of a scale-up. All in one place.</p>
+            <p className='hidden md:flex lg:flex text-gray-200 py-6'>We're lively, not corporate. We have the energy and<br/> boldness of a startup and the expertise and<br/> pragmatism of a scale-up. All in one place.</p>
 
             
       

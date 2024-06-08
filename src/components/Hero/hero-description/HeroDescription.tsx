@@ -2,7 +2,7 @@
 
 export default function HeroDescription() {
   return (
-    <main className="w-full flex mx-auto items-center justify-center py-14">
+    <main className=" bg-primary w-full flex mx-auto items-center justify-center py-14">
       <div className="mx-auto px-10 lg:px-0  gap-14 flex-col md:flex-row lg:flex-row flex items-center justify-center lg:pt-10">
         <div className="text-secondary flex flex-col gap-4 text-center ">
             <p className=" font-semibold"><br /> Web and App Development Agency</p>
